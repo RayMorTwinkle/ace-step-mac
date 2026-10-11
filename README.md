@@ -14,6 +14,8 @@ cd ace-step-mac
 
 然后打开 http://localhost:8085 ，写描述 → 生成 → 播放/下载。
 
+> **后端选择是自动的**：真机 Mac → Metal GPU；Mac 虚拟机（Devin/UTM/Parallels 的 Apple Paravirtual GPU）→ CPU (Accelerate BLAS)。虚拟机的 Metal 反而比 CPU 慢且会因 BF16 张量崩溃，脚本已自动处理。也可以手动 `BACKEND=blas` 或 `BACKEND=metal` 覆盖。
+
 命令行直出一首歌（不开服务器）：
 
 ```bash
