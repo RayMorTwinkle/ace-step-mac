@@ -1,0 +1,41 @@
+<svg viewBox="0 0 512 512" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <title>ace-step-mac</title>
+  <defs>
+    <!-- Violet-to-magenta: generative music / creative energy -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="55%" stop-color="#A21CAF"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <!-- Top gloss for a macOS-style app-icon finish -->
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.20"/>
+      <stop offset="42%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- App-icon base -->
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#gloss)"/>
+  <rect x="1.5" y="1.5" width="509" height="509" rx="114.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+
+  <!-- Eighth note: the generated song -->
+  <g fill="#FFFFFF" filter="url(#shadow)">
+    <!-- stem -->
+    <rect x="272" y="118" width="36" height="242" rx="10"/>
+    <!-- flag -->
+    <path d="M308 118 C 384 144, 426 200, 414 274 C 398 222, 352 192, 308 178 Z"/>
+    <!-- note head -->
+    <ellipse cx="222" cy="364" rx="76" ry="56" transform="rotate(-18 222 364)"/>
+  </g>
+
+  <!-- Sound-wave bars: synthesis in progress -->
+  <g fill="#FFFFFF" fill-opacity="0.85">
+    <rect x="104" y="168" width="18" height="56" rx="9"/>
+    <rect x="140" y="146" width="18" height="100" rx="9" fill-opacity="0.6"/>
+    <rect x="176" y="180" width="18" height="40" rx="9" fill-opacity="0.4"/>
+  </g>
+</svg>
